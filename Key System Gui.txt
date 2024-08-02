@@ -100,15 +100,34 @@ CheckKey.MouseButton1Click:Connect(function()
         TextBox.Text = ""
         wait(1)
         ScreenGui:Destroy()
+--// Get Key \\--
+local AccountId = 35;
+function GetLink()
+    return string.format("https://web1s.xyz/getkeyVNPhack
+end
 
+function confirmsavedkey()
+        writefile("minhtientiny.txt", keyBox.Text)
+        Notify({
+        Description = "Checking Key..";
+        Title = "Duy Hub";
+        Duration = 5;
+        });
+        task.wait(0.5)
+        Verify(keyBox.Text)
+    end
+
+function confirmkey()
+	local key = keyBox.Text
+	
+	writefile("minhtientiny.txt", keyBox.Text)
+        Notify({
+        Description = "Checking Key..";
+        Title = "Duy hub";
+        Duration = 5;
+        });
+        task.wait(0.5)
+        Verify(keyBox.Text)
+end
 -- Put Your Script Here
 loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
-
-    else
-        TextBox.PlaceholderText = "Invalid key. Try again."
-        TextBox.Text = ""
-        wait(1)
-        TextBox.PlaceholderText = "Enter Key..."
-        TextBox.Text = ""
-    end
-end)
