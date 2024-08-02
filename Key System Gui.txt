@@ -102,7 +102,7 @@ CheckKey.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
 
 -- Put Your Script Here
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Duy02022007/vn/main/Duy.txt'))()
+loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
 
     else
         TextBox.PlaceholderText = "Invalid key. Try again."
